@@ -16,7 +16,7 @@ export const ContentCard = styled.li`
   text-align: center;
   padding: 5px;
   width: 200px;
-  height: 250px;
+  height: 400px;
   margin: 5px;
   border: 2px solid #952121;
 `;

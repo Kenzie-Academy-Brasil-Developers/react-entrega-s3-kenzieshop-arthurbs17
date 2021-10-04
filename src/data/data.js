@@ -12,16 +12,41 @@ import camiseta11 from "../assets/img/camiseta11.jpg";
 import camiseta12 from "../assets/img/camiseta12.jpg";
 
 export const products = [
-  { id: 1, name: "Camisa Harry Potter", image: camiseta1 },
-  { id: 2, name: "Camisa Senhor dos Anéis - Anel", image: camiseta2 },
-  { id: 3, name: "Camisa Assassins Creed", image: camiseta3 },
-  { id: 4, name: "Camisa Pac-man", image: camiseta4 },
-  { id: 5, name: "Camisa Senhor dos Anéis - Gandalf", image: camiseta5 },
-  { id: 6, name: "Camisa Rick & Morty", image: camiseta6 },
-  { id: 7, name: "Camisa Harry Potter - Plataforma", image: camiseta7 },
-  { id: 8, name: "Camisa Harry Potter - Hogwarts", image: camiseta8 },
-  { id: 9, name: "Camisa DragonBall", image: camiseta9 },
-  { id: 10, name: "Camisa Star Wars", image: camiseta10 },
-  { id: 11, name: "Camisa Senhor dos Anéis - Árvore", image: camiseta11 },
-  { id: 12, name: "Camisa Studio Ghibli", image: camiseta12 },
+  { id: 1, name: "Camisa Harry Potter", price: 35, image: camiseta1 },
+  {
+    id: 2,
+    name: "Camisa Senhor dos Anéis - Anel",
+    price: 50,
+    image: camiseta2,
+  },
+  { id: 3, name: "Camisa Assassins Creed", price: 45, image: camiseta3 },
+  { id: 4, name: "Camisa Pac-man", price: 23, image: camiseta4 },
+  {
+    id: 5,
+    name: "Camisa Senhor dos Anéis - Gandalf",
+    price: 55,
+    image: camiseta5,
+  },
+  { id: 6, name: "Camisa Rick & Morty", price: 40, image: camiseta6 },
+  {
+    id: 7,
+    name: "Camisa Harry Potter - Plataforma",
+    price: 32,
+    image: camiseta7,
+  },
+  {
+    id: 8,
+    name: "Camisa Harry Potter - Hogwarts",
+    price: 35,
+    image: camiseta8,
+  },
+  { id: 9, name: "Camisa DragonBall", price: 42, image: camiseta9 },
+  { id: 10, name: "Camisa Star Wars", price: 40, image: camiseta10 },
+  {
+    id: 11,
+    name: "Camisa Senhor dos Anéis - Árvore",
+    price: 65,
+    image: camiseta11,
+  },
+  { id: 12, name: "Camisa Studio Ghibli", price: 55, image: camiseta12 },
 ];

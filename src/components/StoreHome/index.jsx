@@ -8,7 +8,8 @@ const StoreHome = () => {
       <Card>
         {productsList.map((product) => (
           <ContentCard>
-            <img src={product.image} alt={product.name} /> {product.name}
+            <img src={product.image} alt={product.name} /> <p>{product.name}</p>{" "}
+            <p>R${product.price},00</p>
             <button>Adicionar</button>
           </ContentCard>
         ))}
