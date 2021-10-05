@@ -12,16 +12,17 @@ const CartComponent = () => {
     <Container>
       <ContentUl>
         {cartList.map((product) => (
-          <ContentLi>
+          <ContentLi key={product.id}>
             <h4>{product.name}</h4>
             <span>R$: {product.price},00</span>
+            <span>Quantidade: {product.quantity}</span>
             <button onClick={() => dispatch(removeFromCartThunk(product.id))}>
               Remover
             </button>
           </ContentLi>
         ))}
       </ContentUl>
-      <h3>Total: {totalPrice}</h3>
+      <h3>Total: R$: {totalPrice},00</h3>
     </Container>
   );
 };

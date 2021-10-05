@@ -22,4 +22,16 @@ export const ContentCard = styled.li`
   border-radius: 5px;
   box-shadow: 0px 2px 4px -1px rgb(0 0 0 / 20%),
     0px 4px 5px 0px rgb(0 0 0 / 14%), 0px 1px 10px 0px rgb(0 0 0 / 12%);
+  button {
+    background-color: #3cb371;
+    color: #fff;
+    font-size: 18px;
+    padding: 5px;
+    border: 1px solid #fff;
+    border-radius: 5px;
+    :hover {
+      background-color: #4682b4;
+      border-color: #4682b4;
+    }
+  }
 `;

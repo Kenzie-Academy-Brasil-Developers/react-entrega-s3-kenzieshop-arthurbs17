@@ -1,7 +1,8 @@
 import styled from "styled-components";
 
 export const Container = styled.div`
-  max-width: 400px;
+  width: 90%;
+  max-width: 600px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -25,7 +26,20 @@ export const ContentLi = styled.li`
   padding: 10px;
   border-bottom: 1px solid #eee9e9;
   display: flex;
+  flex-direction: column;
   justify-content: space-between;
   align-items: center;
   width: 100%;
+  button {
+    background-color: #8b2500;
+    color: #fff;
+    font-size: 10px;
+    padding: 5px;
+    border: 1px solid #fff;
+    border-radius: 5px;
+    :hover {
+      background-color: #ff8c00;
+      border-color: #ff8c00;
+    }
+  }
 `;

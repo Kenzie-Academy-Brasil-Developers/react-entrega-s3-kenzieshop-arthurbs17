@@ -5,8 +5,13 @@ const cart = JSON.parse(localStorage.getItem("cart")) || [];
 const cartReducer = (state = cart, action) => {
   switch (action.type) {
     case ADD_CART:
-      const { product } = action;
-      return [...state, product];
+      if (cart.length === 0) {
+        const { product } = action;
+        return [...state, product];
+      } else {
+        const { product } = action;
+        return product;
+      }
 
     case REMOVE_CART:
       const { list } = action;
