@@ -10,7 +10,7 @@ const StoreHome = () => {
     <div>
       <Card>
         {productsList.map((product) => (
-          <ContentCard>
+          <ContentCard key={product.id}>
             <img src={product.image} alt={product.name} />{" "}
             <span>{product.name}</span> <span>R${product.price},00</span>
             <button onClick={() => dispatch(addToCartThunk(product))}>

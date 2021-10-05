@@ -3,10 +3,13 @@ import { addToCart, removeFromCart } from "./actions";
 export const addToCartThunk = (product) => {
   return (dispatch) => {
     const list = JSON.parse(localStorage.getItem("cart")) || [];
-    list.push(product);
-    localStorage.setItem("cart", JSON.stringify(list));
+    const verify = list.find((ver) => product.id === ver.id);
+    if (verify === undefined) {
+      list.push(product);
+      localStorage.setItem("cart", JSON.stringify(list));
 
-    dispatch(addToCart(product));
+      dispatch(addToCart(product));
+    }
   };
 };
 
