@@ -8,6 +8,7 @@ import { ButtonNav, Header } from "./styles";
 const MenuNav = () => {
   const history = useHistory();
   const cartList = useSelector((state) => state.cart);
+  const numberItens = cartList.reduce((acc, num) => acc + num.quantity, 0);
 
   const sendTo = (path) => {
     history.push(path);
@@ -18,7 +19,7 @@ const MenuNav = () => {
       <ButtonNav onClick={() => sendTo("/")}>KenzieNerd</ButtonNav>
       <MenuItem onClick={() => sendTo("/cart")}>
         <IconButton size="medium" color="inherit">
-          <Badge badgeContent={cartList.length} color="secondary">
+          <Badge badgeContent={numberItens} color="secondary">
             <ShoppingCart />
           </Badge>
         </IconButton>
