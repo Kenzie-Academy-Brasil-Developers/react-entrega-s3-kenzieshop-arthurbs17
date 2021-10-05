@@ -11,12 +11,12 @@ export const Card = styled.ul`
 export const ContentCard = styled.li`
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  justify-content: space-around;
   align-items: center;
   text-align: center;
   padding: 5px;
   width: 200px;
-  height: 400px;
+  height: 300px;
   margin: 5px;
   border: 2px solid #952121;
 `;
