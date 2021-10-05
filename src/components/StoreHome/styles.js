@@ -19,4 +19,7 @@ export const ContentCard = styled.li`
   height: 300px;
   margin: 5px;
   border: 2px solid #952121;
+  border-radius: 5px;
+  box-shadow: 0px 2px 4px -1px rgb(0 0 0 / 20%),
+    0px 4px 5px 0px rgb(0 0 0 / 14%), 0px 1px 10px 0px rgb(0 0 0 / 12%);
 `;
